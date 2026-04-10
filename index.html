@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FMIPA – Fakultas Ilmu Komputer & Matematika</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <div class="d-flex align-items-center gap-3">
+      <span class="top-bar-label">Follow Us:</span>
+      <a href="#" class="top-bar-icon"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="top-bar-icon"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="top-bar-icon"><i class="bi bi-facebook"></i></a>
+    </div>
+    <div class="d-flex align-items-center gap-3 flex-wrap">
+      <span class="top-bar-info"><i class="bi bi-telephone-fill me-1"></i>+62 811 6261 954</span>
+      <span class="top-bar-info"><i class="bi bi-envelope-fill me-1"></i>info@uhnp.ac.id</span>
+      <span class="top-bar-info"><i class="bi bi-clock-fill me-1"></i>Sen – Jum: 08:00 – 17:00</span>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <div class="brand-icon"><span>F</span></div>
+      <span class="brand-text">FMIPA</span>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-label="Toggle navigation">
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </button>
+
+    <!-- Menu items -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#beranda">Beranda</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#tentang" role="button"
+             data-bs-toggle="dropdown">Tentang Kami</a>
+          <ul class="dropdown-menu custom-dropdown">
+            <li><a class="dropdown-item" href="#tentang">Profil Fakultas</a></li>
+            <li><a class="dropdown-item" href="#tentang">Visi & Misi</a></li>
+            <li><a class="dropdown-item" href="#tentang">Struktur Organisasi</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#kompetensi" role="button"
+             data-bs-toggle="dropdown">Program Studi</a>
+          <ul class="dropdown-menu custom-dropdown">
+            <li><a class="dropdown-item" href="#kompetensi">Ilmu Komputer</a></li>
+            <li><a class="dropdown-item" href="#kompetensi">Matematika</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown">Layanan</a>
+          <ul class="dropdown-menu custom-dropdown">
+            <li><a class="dropdown-item" href="#">Akademik</a></li>
+            <li><a class="dropdown-item" href="#">Kemahasiswaan</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#kontak">Kontak</a>
+        </li>
+
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-nav-cta" href="#daftar">Daftar Sekarang</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- =========================================================
+     HERO SECTION (Carousel)
+========================================================= -->
+<section class="hero-section" id="beranda">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="hero-slide slide-1">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+              <i class="bi bi-mortarboard-fill me-2"></i>Selamat Datang Di Fakultas FMIPA
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+              <span class="title-white">ILMU KOMPUTER</span><br/>
+              <span class="title-amp">&amp;</span>
+              <span class="title-orange">MATEMATIKA</span>
+            </h1>
+            <p class="hero-desc" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+              Fakultas Ilmu Komputer dan Matematika merupakan pusat pengembangan ilmu pengetahuan
+              di bidang teknologi, data, dan analisis matematis untuk menghadapi tantangan era digital.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+              <a href="#daftar" class="btn btn-hero-primary">
+                Daftar Sekarang <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+              <a href="#tentang" class="btn btn-hero-outline">
+                Pelajari Lebih <i class="bi bi-play-circle ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-2">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <div class="hero-badge">
+              <i class="bi bi-cpu-fill me-2"></i>Kompetensi Unggul
+            </div>
+            <h1 class="hero-title">
+              <span class="title-white">TEKNOLOGI</span><br/>
+              <span class="title-amp">&amp;</span>
+              <span class="title-orange">INOVASI</span>
+            </h1>
+            <p class="hero-desc">
+              Mempersiapkan lulusan yang siap bersaing di era industri 4.0 dengan kurikulum terkini
+              dan kemitraan bersama 23+ industri dan universitas terkemuka.
+            </p>
+            <div class="hero-actions">
+              <a href="#kompetensi" class="btn btn-hero-primary">
+                Lihat Program <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="hero-slide slide-3">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <div class="hero-badge">
+              <i class="bi bi-people-fill me-2"></i>Komunitas Aktif
+            </div>
+            <h1 class="hero-title">
+              <span class="title-white">BERSAMA</span><br/>
+              <span class="title-amp">MENUJU</span><br/>
+              <span class="title-orange">MASA DEPAN</span>
+            </h1>
+            <p class="hero-desc">
+              365+ mahasiswa aktif siap berkolaborasi, berinovasi, dan membawa perubahan
+              nyata bagi masyarakat melalui ilmu pengetahuan.
+            </p>
+            <div class="hero-actions">
+              <a href="#berita" class="btn btn-hero-primary">
+                Lihat Berita <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /carousel-inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev custom-prev" type="button"
+            data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button class="carousel-control-next custom-next" type="button"
+            data-bs-target="#heroCarousel" data-bs-slide="next">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+
+</section>
+
+<!-- =========================================================
+     TICKER / MARQUEE
+========================================================= -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>Himpunan Mahasiswa</span><span class="sep">•</span>
+    <span>Program Sarjana</span><span class="sep">•</span>
+    <span>Lulus Tepat Waktu</span><span class="sep">•</span>
+    <span>Uang Kuliah Terjangkau</span><span class="sep">•</span>
+    <span>Layanan Terbaik</span><span class="sep">•</span>
+    <span>Himpunan Mahasiswa</span><span class="sep">•</span>
+    <span>Program Sarjana</span><span class="sep">•</span>
+    <span>Lulus Tepat Waktu</span><span class="sep">•</span>
+    <span>Uang Kuliah Terjangkau</span><span class="sep">•</span>
+    <span>Layanan Terbaik</span><span class="sep">•</span>
+    <span>Himpunan Mahasiswa</span><span class="sep">•</span>
+    <span>Program Sarjana</span><span class="sep">•</span>
+    <span>Lulus Tepat Waktu</span><span class="sep">•</span>
+    <span>Uang Kuliah Terjangkau</span><span class="sep">•</span>
+    <span>Layanan Terbaik</span><span class="sep">•</span>
+  </div>
+</div>
+
+
+<!-- =========================================================
+     TENTANG SECTION
+========================================================= -->
+<section class="section-about" id="tentang">
+  <div class="container">
+
+    <div class="row align-items-center g-5">
+      <!-- Left: Image + stat card -->
+      <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+        <div class="about-img-wrap">
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80"
+                 alt="Mahasiswa FMIPA" class="about-img" />
+            <div class="about-img-deco"></div>
+          </div>
+          <!-- Floating stat card -->
+          <div class="stat-card">
+            <div class="stat-number" id="statMahasiswa">365</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Mahasiswa Aktif</div>
+          </div>
+          <!-- Second floating card -->
+          <div class="stat-card stat-card-2">
+            <div class="stat-number" id="statProdi">23</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Mitra Industri</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text content -->
+      <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+        <div class="section-tag">
+          <i class="bi bi-building me-2"></i>Fakultas Matematika dan Ilmu Pengetahuan Alam
+        </div>
+        <h2 class="section-title">Selamat Datang, <span class="text-orange">Di FMIPA.</span></h2>
+        <p class="section-body">
+          Universitas HKBP Nommensen Pematangsiantar yang disingkat dengan UHN/PNPI dikembangkan
+          oleh Yayasan Universitas HKBP Nommensen, memperoleh ijin pendirian dari Kementerian Riset,
+          Teknologi, dan Pendidikan Tinggi dengan Keputusan Rektor Nomor 715/KPTI/2017 tanggal 6 Desember 2017.
+        </p>
+        <p class="section-body">
+          Rencana pembukaan Program Studi Ilmu Komputer (S1) PSILKOM tercantum pada Rencana Induk
+          Pengembangan Universitas HKBP Nommensen Pematangsiantar Tahun 2018–2030.
+        </p>
+
+        <!-- Checkmarks -->
+        <ul class="about-list">
+          <li data-aos="fade-up" data-aos-delay="200">
+            <div class="about-check"><i class="bi bi-check-lg"></i></div>
+            <div>
+              <strong>Kurikulum Terbarukan</strong>
+              <p>Kurikulum selalu diperbarui mengikuti perkembangan industri dan teknologi terkini.</p>
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <div class="about-check"><i class="bi bi-check-lg"></i></div>
+            <div>
+              <strong>Dosen Berpengalaman</strong>
+              <p>Pengajar berpengalaman di bidangnya dengan latar belakang akademik dan industri.</p>
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="400">
+            <div class="about-check"><i class="bi bi-check-lg"></i></div>
+            <div>
+              <strong>Prasarana dan Fasilitas Lengkap</strong>
+              <p>Lab komputer modern, perpustakaan digital, dan ruang kolaborasi mahasiswa.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     KERJA SAMA / MITRA SECTION
+========================================================= -->
+<section class="section-mitra" id="mitra">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag mx-auto mb-2">Ekosistem Kolaborasi</div>
+      <h2 class="section-title">Bekerja Sama Dengan <span class="text-orange">23+</span><br/> Industri dan Universitas</h2>
+    </div>
+
+    <div class="mitra-grid" data-aos="fade-up" data-aos-delay="100">
+      <!-- Linux -->
+      <div class="mitra-card">
+        <i class="bi bi-ubuntu mitra-logo-icon"></i>
+        <span>Linux</span>
+      </div>
+      <!-- Windows -->
+      <div class="mitra-card">
+        <i class="bi bi-windows mitra-logo-icon"></i>
+        <span>Windows</span>
+      </div>
+      <!-- AWS -->
+      <div class="mitra-card">
+        <div class="mitra-text-logo">aws</div>
+        <span>Amazon AWS</span>
+      </div>
+      <!-- Google -->
+      <div class="mitra-card">
+        <i class="bi bi-google mitra-logo-icon"></i>
+        <span>Google</span>
+      </div>
+      <!-- Microsoft -->
+      <div class="mitra-card">
+        <i class="bi bi-microsoft mitra-logo-icon"></i>
+        <span>Microsoft</span>
+      </div>
+      <!-- GitHub -->
+      <div class="mitra-card">
+        <i class="bi bi-github mitra-logo-icon"></i>
+        <span>GitHub</span>
+      </div>
+      <!-- Oracle -->
+      <div class="mitra-card">
+        <i class="bi bi-database-fill mitra-logo-icon"></i>
+        <span>Oracle</span>
+      </div>
+      <!-- Cisco -->
+      <div class="mitra-card">
+        <i class="bi bi-router-fill mitra-logo-icon"></i>
+        <span>Cisco</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     KOMPETENSI / PROGRAM STUDI SECTION
+========================================================= -->
+<section class="section-kompetensi" id="kompetensi">
+  <div class="container">
+
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag mx-auto">Kompetensi Keahlian</div>
+      <h2 class="section-title mt-2">Lulusan Dengan <span class="text-orange">Kompetensi Unggul</span></h2>
+      <p class="section-body mx-auto" style="max-width:560px">
+        Program studi kami dirancang untuk melahirkan profesional yang siap bersaing
+        di tingkat nasional maupun internasional.
+      </p>
+    </div>
+
+    <!-- Ilmu Komputer -->
+    <div class="mb-4" data-aos="fade-up">
+      <div class="prodi-label">
+        <i class="bi bi-laptop me-2"></i>Lulusan Dengan Keahlian
+        <span class="text-orange ms-1">Ilmu Komputer</span>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <!-- Card 1 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="kompetensi-card">
+          <div class="kompetensi-icon-wrap" style="--card-color: #2563eb">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <h4 class="kompetensi-title">Cyber Security</h4>
+          <p class="kompetensi-desc">
+            Profesional yang mampu melindungi sistem, jaringan, dan data dari ancaman
+            siber serta mencegah dan menangani serangan digital secara komprehensif.
+          </p>
+          <a href="#" class="kompetensi-link">Pelajari <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="kompetensi-card">
+          <div class="kompetensi-icon-wrap" style="--card-color: #7c3aed">
+            <i class="bi bi-palette-fill"></i>
+          </div>
+          <h4 class="kompetensi-title">UI / UX Design</h4>
+          <p class="kompetensi-desc">
+            Profesional yang mampu merancang tampilan dan pengalaman pengguna yang
+            menarik, intuitif, dan mudah digunakan pada aplikasi atau website.
+          </p>
+          <a href="#" class="kompetensi-link">Pelajari <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="kompetensi-card">
+          <div class="kompetensi-icon-wrap" style="--card-color: #ea580c">
+            <i class="bi bi-megaphone-fill"></i>
+          </div>
+          <h4 class="kompetensi-title">Digital Marketing</h4>
+          <p class="kompetensi-desc">
+            Ahli pemasaran digital yang mampu merancang dan mengeksekusi strategi online
+            untuk meningkatkan brand awareness, traffic, dan penjualan.
+          </p>
+          <a href="#" class="kompetensi-link">Pelajari <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Matematika -->
+    <div class="mb-4" data-aos="fade-up">
+      <div class="prodi-label">
+        <i class="bi bi-calculator me-2"></i>Lulusan Dengan Keahlian
+        <span class="text-orange ms-1">Matematika</span>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 4 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="kompetensi-card kompetensi-card-wide">
+          <div class="kompetensi-icon-wrap" style="--card-color: #059669">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h4 class="kompetensi-title">Analysis</h4>
+          <p class="kompetensi-desc">
+            Profesional yang mampu mengolah, menganalisis, dan menginterpretasikan data
+            secara mendalam untuk mendukung pengambilan keputusan strategis berbasis data.
+          </p>
+          <a href="#" class="kompetensi-link">Pelajari <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="kompetensi-card kompetensi-card-wide">
+          <div class="kompetensi-icon-wrap" style="--card-color: #0891b2">
+            <i class="bi bi-bar-chart-fill"></i>
+          </div>
+          <h4 class="kompetensi-title">Statistika</h4>
+          <p class="kompetensi-desc">
+            Profesional yang mampu mengumpulkan, mengolah, dan menganalisis data menggunakan
+            metode statistika untuk menghasilkan informasi yang akurat dan mendukung keputusan.
+          </p>
+          <a href="#" class="kompetensi-link">Pelajari <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     BERITA SECTION
+========================================================= -->
+<section class="section-berita" id="berita">
+  <div class="container">
+
+    <div class="d-flex align-items-end justify-content-between mb-5 flex-wrap gap-3" data-aos="fade-up">
+      <div>
+        <div class="section-tag">Informasi Terkini</div>
+        <h2 class="section-title mt-1">Berita <span class="text-orange">&amp; Informasi</span></h2>
+      </div>
+      <a href="#" class="btn btn-outline-primary-custom">Lihat Semua <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+
+    <!-- Berita Carousel -->
+    <div id="beritaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+         data-aos="fade-up" data-aos-delay="100">
+      <div class="carousel-inner">
+        <!-- Row 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=80" alt="Berita 1" />
+                  <div class="berita-category">Akademik</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>12 Maret 2025</p>
+                  <h5 class="berita-title">Lowongan Jabatan Dosen Baru Di Fakultas FMIPA</h5>
+                  <p class="berita-desc">Fakultas Matematika dan Ilmu Pengetahuan Alam membuka kesempatan bagi individu berprestasi...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=80" alt="Berita 2" />
+                  <div class="berita-category">Karir</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>20 Feb 2025</p>
+                  <h5 class="berita-title">Lowongan Jabatan Dosen Baru Di Fakultas FMIPA</h5>
+                  <p class="berita-desc">Fakultas Ilmu Komputer dan Matematika membuka peluang karir bagi dosen kompeten di bidangnya...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-none d-lg-block">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80" alt="Berita 3" />
+                  <div class="berita-category">Prestasi</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>05 Jan 2025</p>
+                  <h5 class="berita-title">Lowongan Jabatan Dosen Baru Di Fakultas FMIPA</h5>
+                  <p class="berita-desc">Kesempatan emas bagi tenaga pendidik untuk berkontribusi dalam pengembangan kualitas pendidikan...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-none d-lg-block">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80" alt="Berita 4" />
+                  <div class="berita-category">Pengumuman</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>18 Des 2024</p>
+                  <h5 class="berita-title">Lowongan Jabatan Dosen Baru Di Fakultas FMIPA</h5>
+                  <p class="berita-desc">Program Studi Matematika FMIPA membuka lowongan dosen untuk mengisi posisi pengajar tetap...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" alt="Berita 5" />
+                  <div class="berita-category">Event</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>10 Nov 2024</p>
+                  <h5 class="berita-title">Seminar Nasional Teknologi Informasi 2024</h5>
+                  <p class="berita-desc">FMIPA menyelenggarakan seminar nasional dengan menghadirkan pembicara dari perusahaan teknologi terkemuka...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80" alt="Berita 6" />
+                  <div class="berita-category">Beasiswa</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>01 Okt 2024</p>
+                  <h5 class="berita-title">Program Beasiswa Unggulan FMIPA 2025</h5>
+                  <p class="berita-desc">FMIPA membuka pendaftaran beasiswa unggulan bagi mahasiswa berprestasi yang membutuhkan dukungan finansial...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-none d-lg-block">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1565728744382-61accd4aa148?w=400&q=80" alt="Berita 7" />
+                  <div class="berita-category">Kerjasama</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>15 Sep 2024</p>
+                  <h5 class="berita-title">MOU Dengan Perusahaan Teknologi Nasional</h5>
+                  <p class="berita-desc">FMIPA menandatangani MOU dengan 5 perusahaan teknologi untuk program magang dan rekrutmen mahasiswa...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-none d-lg-block">
+              <div class="berita-card">
+                <div class="berita-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&q=80" alt="Berita 8" />
+                  <div class="berita-category">Wisuda</div>
+                </div>
+                <div class="berita-body">
+                  <p class="berita-date"><i class="bi bi-calendar3 me-1"></i>20 Agu 2024</p>
+                  <h5 class="berita-title">Wisuda Angkatan ke-5 FMIPA 2024</h5>
+                  <p class="berita-desc">Sebanyak 87 mahasiswa FMIPA resmi diwisuda dalam upacara sakral yang berlangsung khidmat dan meriah...</p>
+                  <a href="#" class="berita-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="berita-controls mt-4 d-flex justify-content-center gap-2">
+        <button class="berita-btn" data-bs-target="#beritaCarousel" data-bs-slide="prev">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="berita-btn" data-bs-target="#beritaCarousel" data-bs-slide="next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     CTA / DAFTAR SECTION
+========================================================= -->
+<section class="section-cta" id="daftar">
+  <div class="cta-bg-deco"></div>
+  <div class="container position-relative z-1">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center" data-aos="zoom-in">
+        <div class="section-tag mx-auto mb-3" style="--tag-color: rgba(255,255,255,0.2); color:#fff">
+          Bergabung Sekarang
+        </div>
+        <h2 class="cta-title">Mulai Perjalanan Akademikmu<br/> Bersama <span class="text-orange">FMIPA</span></h2>
+        <p class="cta-desc">
+          Daftarkan dirimu sekarang dan jadilah bagian dari komunitas ilmuwan masa depan
+          yang inovatif, kreatif, dan berdampak.
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+          <a href="#" class="btn btn-cta-primary">Daftar Mahasiswa Baru <i class="bi bi-arrow-right ms-2"></i></a>
+          <a href="#kontak" class="btn btn-cta-outline">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="site-footer" id="kontak">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Brand + info -->
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="footer-brand">
+            <div class="footer-brand-icon"><span>F</span></div>
+            <span class="footer-brand-text">FMIPA</span>
+          </div>
+          <p class="footer-about">
+            Fakultas Matematika dan Ilmu Pengetahuan Alam – Universitas HKBP Nommensen Pematangsiantar.
+            Mencetak generasi unggul yang siap menghadapi tantangan era digital.
+          </p>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Pematang Siantar, Sumatera Utara</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+62 811 6261 954</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <span>info@uhnp.ac.id</span>
+            </div>
+          </div>
+          <div class="footer-socials mt-3">
+            <a href="#" class="footer-social-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-sm-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <h5 class="footer-heading">Tautan Cepat</h5>
+          <ul class="footer-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kompetensi">Program Studi</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Program studi -->
+        <div class="col-sm-6 col-lg-2" data-aos="fade-up" data-aos-delay="150">
+          <h5 class="footer-heading">Program Studi</h5>
+          <ul class="footer-links">
+            <li><a href="#">Ilmu Komputer</a></li>
+            <li><a href="#">Matematika</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact form -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <h5 class="footer-heading">Hubungi Kami</h5>
+          <form class="footer-form" onsubmit="handleContactForm(event)">
+            <div class="mb-3">
+              <input type="text" class="footer-input" placeholder="Nama Lengkap" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="footer-input" placeholder="Alamat Email" required />
+            </div>
+            <div class="mb-3">
+              <textarea class="footer-input footer-textarea" placeholder="Pesan Anda..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-footer-submit w-100">
+              Kirim Pesan <i class="bi bi-send-fill ms-2"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer bottom -->
+  <div class="footer-bottom">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="mb-0">© 2025 FMIPA. All Rights Reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP BUTTON
+========================================================= -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<!-- Toast notification -->
+<div class="toast-notify" id="toastNotify">
+  <i class="bi bi-check-circle-fill me-2"></i> Pesan berhasil dikirim!
+</div>
+
+
+<!-- =========================================================
+     SCRIPTS
+========================================================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
